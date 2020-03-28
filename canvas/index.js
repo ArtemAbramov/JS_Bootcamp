@@ -8,8 +8,8 @@ const {
   Events
 } = Matter
 
-const cellsHorizontal = 8
-const cellsVertical = 8
+const cellsHorizontal = 20
+const cellsVertical = 15
 const width = window.innerWidth - 10
 const height = window.innerHeight - 10
 
@@ -17,7 +17,7 @@ const unitLengthX = width / cellsHorizontal
 const unitLengthY = height / cellsVertical
 
 const engine = Engine.create()
-engine.world.gravity.y = 0
+// engine.world.gravity.y = 0
 const {world} = engine
 const render = Render.create({
   element: document.body,
